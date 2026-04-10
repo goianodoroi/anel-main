@@ -18,7 +18,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
-        {config.utmPixels.map((p: any) => (
+        {config.utmPixels?.map((p: { id: string; code: string }) => (
           <script key={p.id} dangerouslySetInnerHTML={{ __html: p.code }} />
         ))}
       </head>

@@ -3,13 +3,19 @@
 import { useState, useEffect } from "react";
 import { saveConfig } from "../actions";
 
-export default function ConfigPage({ initialConfig }: { initialConfig: any }) {
+interface Config {
+  price?: string;
+  checkouts?: Record<string, string>;
+  utmPixels?: Array<{ id: string; code: string }>;
+}
+
+export default function ConfigPage({ initialConfig }: { initialConfig: Config }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
   
   const [price, setPrice] = useState(initialConfig.price || "97");
   const [checkouts, setCheckouts] = useState<Record<string, string>>(initialConfig.checkouts || {});
-  const [utmPixels, setUtmPixels] = useState<any[]>(initialConfig.utmPixels || []);
+  const [utmPixels, setUtmPixels] = useState<Array<{ id: string; code: string }>>(initialConfig.utmPixels || []);
   const [msg, setMsg] = useState("");
 
   const handleLogin = (e: React.FormEvent) => {

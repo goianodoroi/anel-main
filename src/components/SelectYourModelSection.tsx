@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const CDN = "https://ourahealth.imgix.net/hardware-pdp/hero-carousel";
-const Q = "?auto=format&fit=max&q=90&w=800";
+
 
 // Local fallback angle images
 const LOCAL = "/products/oura";

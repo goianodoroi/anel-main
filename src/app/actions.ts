@@ -9,7 +9,7 @@ export async function getConfig() {
   try {
     const data = await fs.readFile(configPath, "utf-8");
     return JSON.parse(data);
-  } catch (error) {
+  } catch {
     return {
       price: "97",
       utmPixels: []
@@ -17,7 +17,7 @@ export async function getConfig() {
   }
 }
 
-export async function saveConfig(password: string, newConfig: any) {
+export async function saveConfig(password: string, newConfig: Record<string, unknown>) {
   if (password !== "aglomerado") {
     return { success: false, error: "Senha incorreta" };
   }
@@ -25,7 +25,7 @@ export async function saveConfig(password: string, newConfig: any) {
   try {
     await fs.writeFile(configPath, JSON.stringify(newConfig, null, 2), "utf-8");
     return { success: true };
-  } catch (error) {
+  } catch {
     return { success: false, error: "Erro ao salvar" };
   }
 }
