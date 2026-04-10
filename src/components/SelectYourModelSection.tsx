@@ -14,12 +14,12 @@ const MODELS = {
     desc: "Full titanium. Lightest smart ring ever.",
     sizes: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     colors: [
-      { id: "silver",         name: "Silver",         checkoutUrl: "https://shoesstt.shop/cart/45323276877878:1", bg: "#d8d4d0", swatch: `${LOCAL}/or4-silver-swatch.png`,         imgs: [{ src: `${LOCAL}/or4-silver-angle.png`,         label: "Angle", fit: "contain" }] },
-      { id: "black",          name: "Black",          checkoutUrl: "https://shoesstt.shop/cart/45323276910646:1", bg: "#2a2a2a", swatch: `${LOCAL}/or4-black-swatch.png`,          imgs: [{ src: `${LOCAL}/or4-black-angle.png`,          label: "Angle", fit: "contain" }] },
-      { id: "brushed-silver", name: "Brushed Silver", checkoutUrl: "https://shoesstt.shop/cart/45323276943414:1", bg: "#b8b6b2", swatch: `${LOCAL}/or4-brushed-silver-swatch.png`, imgs: [{ src: `${LOCAL}/or4-brushed-silver-angle.png`, label: "Angle", fit: "contain" }] },
-      { id: "gold",           name: "Gold",           checkoutUrl: "https://shoesstt.shop/cart/45323276976182:1", bg: "#c9a96e", swatch: `${LOCAL}/or4-gold-swatch.png`,           imgs: [{ src: `${LOCAL}/or4-gold-angle.png`,           label: "Angle", fit: "contain" }] },
-      { id: "rose-gold",      name: "Rose Gold",      checkoutUrl: "https://shoesstt.shop/cart/45323277008950:1", bg: "#c9a099", swatch: `${LOCAL}/or4-rose-gold-swatch.png`,      imgs: [{ src: `${LOCAL}/or4-rose-gold-angle.png`,      label: "Angle", fit: "contain" }] },
-      { id: "stealth",        name: "Stealth",        checkoutUrl: "https://shoesstt.shop/cart/45323277041718:1", bg: "#1c1c1c", swatch: `${LOCAL}/or4-stealth-swatch.png`,        imgs: [{ src: `${LOCAL}/or4-stealth-angle.png`,        label: "Angle", fit: "contain" }] },
+      { id: "silver",         name: "Silver",         bg: "#d8d4d0", swatch: `${LOCAL}/or4-silver-swatch.png`,         imgs: [{ src: `${LOCAL}/or4-silver-angle.png`,         label: "Angle", fit: "contain" }] },
+      { id: "black",          name: "Black",          bg: "#2a2a2a", swatch: `${LOCAL}/or4-black-swatch.png`,          imgs: [{ src: `${LOCAL}/or4-black-angle.png`,          label: "Angle", fit: "contain" }] },
+      { id: "brushed-silver", name: "Brushed Silver", bg: "#b8b6b2", swatch: `${LOCAL}/or4-brushed-silver-swatch.png`, imgs: [{ src: `${LOCAL}/or4-brushed-silver-angle.png`, label: "Angle", fit: "contain" }] },
+      { id: "gold",           name: "Gold",           bg: "#c9a96e", swatch: `${LOCAL}/or4-gold-swatch.png`,           imgs: [{ src: `${LOCAL}/or4-gold-angle.png`,           label: "Angle", fit: "contain" }] },
+      { id: "rose-gold",      name: "Rose Gold",      bg: "#c9a099", swatch: `${LOCAL}/or4-rose-gold-swatch.png`,      imgs: [{ src: `${LOCAL}/or4-rose-gold-angle.png`,      label: "Angle", fit: "contain" }] },
+      { id: "stealth",        name: "Stealth",        bg: "#1c1c1c", swatch: `${LOCAL}/or4-stealth-swatch.png`,        imgs: [{ src: `${LOCAL}/or4-stealth-angle.png`,        label: "Angle", fit: "contain" }] },
     ],
   },
   ceramic: {
@@ -27,10 +27,10 @@ const MODELS = {
     desc: "Scratch-resistant ceramic. Timeless finish.",
     sizes: [6, 7, 8, 9, 10, 11, 12, 13],
     colors: [
-      { id: "cloud",    name: "Cloud",    checkoutUrl: "https://shoesstt.shop/cart/45323467882550:1", bg: "#e4dfd9", swatch: `${LOCAL}/or4-ceramic-cloud-swatch.png`,    imgs: [{ src: `${LOCAL}/or4-ceramic-cloud-angle.png`,    label: "Angle", fit: "contain" }] },
-      { id: "midnight", name: "Midnight", checkoutUrl: "https://shoesstt.shop/cart/45323467915318:1", bg: "#1e1e22", swatch: `${LOCAL}/or4-ceramic-midnight-swatch.png`, imgs: [{ src: `${LOCAL}/or4-ceramic-midnight-angle.png`, label: "Angle", fit: "contain" }] },
-      { id: "petal",    name: "Petal",    checkoutUrl: "https://shoesstt.shop/cart/45323467948086:1", bg: "#d4b8b2", swatch: `${LOCAL}/or4-ceramic-petal-swatch.png`,    imgs: [{ src: `${LOCAL}/or4-ceramic-petal-angle.png`,    label: "Angle", fit: "contain" }] },
-      { id: "tide",     name: "Tide",     checkoutUrl: "https://shoesstt.shop/cart/45323467980854:1", bg: "#8fa89a", swatch: `${LOCAL}/or4-ceramic-tide-swatch.png`,     imgs: [{ src: `${LOCAL}/or4-ceramic-tide-angle.png`,     label: "Angle", fit: "contain" }] },
+      { id: "cloud",    name: "Cloud",    bg: "#e4dfd9", swatch: `${LOCAL}/or4-ceramic-cloud-swatch.png`,    imgs: [{ src: `${LOCAL}/or4-ceramic-cloud-angle.png`,    label: "Angle", fit: "contain" }] },
+      { id: "midnight", name: "Midnight", bg: "#1e1e22", swatch: `${LOCAL}/or4-ceramic-midnight-swatch.png`, imgs: [{ src: `${LOCAL}/or4-ceramic-midnight-angle.png`, label: "Angle", fit: "contain" }] },
+      { id: "petal",    name: "Petal",    bg: "#d4b8b2", swatch: `${LOCAL}/or4-ceramic-petal-swatch.png`,    imgs: [{ src: `${LOCAL}/or4-ceramic-petal-angle.png`,    label: "Angle", fit: "contain" }] },
+      { id: "tide",     name: "Tide",     bg: "#8fa89a", swatch: `${LOCAL}/or4-ceramic-tide-swatch.png`,     imgs: [{ src: `${LOCAL}/or4-ceramic-tide-angle.png`,     label: "Angle", fit: "contain" }] },
     ],
   },
 };
@@ -252,7 +252,7 @@ export default function SelectYourModelSection({ price = "97", checkouts = {} }:
                   <span className="strike-through text-[var(--oura-mute)] text-base">$499</span>
                   <span className="text-[var(--oura-ink)] font-normal tracking-[-0.03em]" style={{ fontSize: "clamp(1.6rem, 2.5vw, 2rem)" }}>${price}</span>
                 </div>
-                <a href={checkouts[`${model}-${color.id}`] || color.checkoutUrl} className="inline-flex items-center gap-2 rounded-full bg-[var(--oura-ink)] text-[var(--oura-cream)] px-7 py-3 text-sm font-medium tracking-[0.02em] transition-all duration-150 hover:bg-[var(--oura-slate)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
+                <a href={checkouts[`${model}-${color.id}`] || ""} className="inline-flex items-center gap-2 rounded-full bg-[var(--oura-ink)] text-[var(--oura-cream)] px-7 py-3 text-sm font-medium tracking-[0.02em] transition-all duration-150 hover:bg-[var(--oura-slate)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
                   Shop Now
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
