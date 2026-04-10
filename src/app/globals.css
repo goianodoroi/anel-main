@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --oura-cream: #f6efe5;
+  --oura-cream-deep: #efe7dc;
+  --oura-soft: #f3ece3;
+  --oura-line: #d8d0c5;
+  --oura-ink: #1c1b1a;
+  --oura-charcoal: #1c1b1a;
+  --oura-slate: #4a4741;
+  --oura-mute: #6b665f;
+}
+
+@theme inline {
+  --color-oura-cream: var(--oura-cream);
+  --color-oura-ink: var(--oura-ink);
+  --color-oura-slate: var(--oura-slate);
+  --color-oura-mute: var(--oura-mute);
+  --color-oura-line: var(--oura-line);
+  --color-oura-soft: var(--oura-soft);
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-editorial: "Cormorant Garamond", Georgia, serif;
+}
+
+body {
+  background: var(--oura-cream);
+  color: var(--oura-ink);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Ceramic text animation */
+@keyframes ceramic-fade {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(4px);
+    filter: blur(2px);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-ceramic {
+  animation: ceramic-fade 4s ease-in-out infinite;
+}
+
+/* Price strikethrough animation */
+@keyframes strike {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.strike-through {
+  position: relative;
+}
+
+.strike-through::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--oura-ink);
+}
+
+@keyframes live-health-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-50% - 12px), 0, 0);
+  }
+}
+
+.live-health-marquee {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .live-health-marquee {
+    display: flex;
+    width: max-content;
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+    animation: live-health-marquee 34s linear infinite;
+    will-change: transform;
+  }
+}

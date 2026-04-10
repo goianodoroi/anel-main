@@ -1,0 +1,21 @@
+{
+  "price": "97",
+  "checkouts": {
+    "standard-silver": "https://shoesstt.shop/cart/45323276877878:1",
+    "standard-black": "https://shoesstt.shop/cart/45323276910646:1",
+    "standard-brushed-silver": "https://shoesstt.shop/cart/45323276943414:1",
+    "standard-gold": "https://shoesstt.shop/cart/45323276976182:1",
+    "standard-rose-gold": "https://shoesstt.shop/cart/45323277008950:1",
+    "standard-stealth": "https://shoesstt.shop/cart/45323277041718:1",
+    "ceramic-cloud": "https://shoesstt.shop/cart/45323467882550:1",
+    "ceramic-midnight": "https://shoesstt.shop/cart/45323467915318:1",
+    "ceramic-petal": "https://shoesstt.shop/cart/45323467948086:1",
+    "ceramic-tide": "https://shoesstt.shop/cart/45323467980854:1"
+  },
+  "utmPixels": [
+    {
+      "id": "utm1",
+      "code": "window.pixelId = \"69d84f5ae2597ed2d2ec3609\";\nvar a = document.createElement(\"script\");\na.setAttribute(\"async\", \"\");\na.setAttribute(\"defer\", \"\");\na.setAttribute(\"src\", \"https://cdn.utmify.com.br/scripts/pixel/pixel.js\");\ndocument.head.appendChild(a);"
+    }
+  ]
+}
