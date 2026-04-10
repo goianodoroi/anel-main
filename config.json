@@ -15,7 +15,7 @@
   "utmPixels": [
     {
       "id": "utm1",
-      "code": "window.pixelId = \"69d84f5ae2597ed2d2ec3609\";\nvar a = document.createElement(\"script\");\na.setAttribute(\"async\", \"\");\na.setAttribute(\"defer\", \"\");\na.setAttribute(\"src\", \"https://cdn.utmify.com.br/scripts/pixel/pixel.js\");\ndocument.head.appendChild(a);"
+      "code": "<script>\n  window.pixelId = \"69d84f5ae2597ed2d2ec3609\";\n  var a = document.createElement(\"script\");\n  a.setAttribute(\"async\", \"\");\n  a.setAttribute(\"defer\", \"\");\n  a.setAttribute(\"src\", \"https://cdn.utmify.com.br/scripts/pixel/pixel.js\");\n  document.head.appendChild(a);\n</script>"
     }
   ]
 }

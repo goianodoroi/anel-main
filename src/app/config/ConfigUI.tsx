@@ -212,7 +212,7 @@ export default function ConfigPage({ initialConfig }: { initialConfig: Config })
                   <textarea
                     value={pixel.code}
                     onChange={(e) => updateUtmPixel(pixel.id, e.target.value)}
-                    placeholder="Apenas código javascript (sem tags <script>)"
+                    placeholder="Cole o script completo (incluindo as tags <script> se houver)"
                     className="w-full h-24 bg-[var(--oura-cream)] rounded-[12px] p-3 text-xs font-mono text-slate-700 outline-none focus:ring-1 focus:ring-[var(--oura-ink)]"
                   />
                   <button onClick={() => removeUtmPixel(pixel.id)} className="self-start w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-50 text-red-400 hover:text-red-600 transition-colors">

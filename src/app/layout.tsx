@@ -18,9 +18,10 @@ export default async function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
-        {config.utmPixels?.map((p: { id: string; code: string }) => (
-          <script key={p.id} dangerouslySetInnerHTML={{ __html: p.code }} />
-        ))}
+        {config.utmPixels?.map((p: { id: string; code: string }) => {
+          const cleanCode = p.code.replace(/^\s*<script[^>]*>/i, '').replace(/<\/script>\s*$/i, '');
+          return <script key={p.id} dangerouslySetInnerHTML={{ __html: cleanCode }} />;
+        })}
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
